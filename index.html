@@ -83,29 +83,23 @@
             alt="Eliseo Borja"
             class="h-90 z-20 drop-shadow-[0px_-20px_50px_#6a7964]"
           />
-          <!-- div boton -->
-          <div
-            class="h-8 w-30 flex items-center justify-center z-40 absolute bottom-2 right-38 md:static"
+          <a
+            href="#projects"
+            target="_blank"
+            class="h-8 w-35 absolute z-40 bottom-3 left-35 text-black text-sm text-center pt-1 font-bold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] border border-black transition duration-100"
           >
-            <a
-              href="#projects"
-              target="_blank"
-              class="h-full w-full text-black text-sm text-center pt-1 font-bold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] border border-black transition duration-100"
-            >
-              MY PROJECTS
-            </a>
-          </div>
+            MY PROJECTS
+          </a>
         </div>
         <div class="hidden"></div>
       </section>
     </main>
     <!-- seccion who am i y skills -->
     <section
-      class="h-[76%] w-full bg-slate-400 flex flex-col items-center gap-6"
+      class="h-[76%] w-full bg-slate-400 flex flex-col items-center gap-6 px-4"
     >
       <!-- primera parte, específicamente who am i ? -->
-      <span
-        class="h-[20%] border border-black flex flex-col p-6 gap-3 justify-center items-center"
+      <span class="h-[20%] flex flex-col p-6 gap-3 justify-center items-center"
         ><h2
           class="text-[#d3e684] uppercase text-center text-2xl font-semibold"
         >
@@ -138,7 +132,7 @@
         <div class="flex flex-row h-full">
           <!-- contenedores de imagenes de lenguajes -->
           <div class="flex flex-col gap-1 w-[65%]">
-            <span class="flex flex-row w-full h-[50%] px-6 gap-1">
+            <span class="flex flex-row w-full h-[50%] gap-1">
               <!-- contenedor html -->
               <div
                 class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
@@ -153,17 +147,13 @@
               </div>
             </span>
             <!-- contenedor segundo de imagenes de lenguajes -->
-            <span class="flex flex-row w-full h-[50%] px-6 gap-1">
+            <span class="flex flex-row w-full h-[50%] gap-1">
               <!-- imagen de javscript -->
-              <div
-                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
-              >
+              <div class="h-full bg-[#25334d] w-30 flex rounded-lg px-5">
                 <img src="./imagenes/icons8-javascript.svg" alt="JavaScript" />
               </div>
               <!-- imagen de tailwind -->
-              <div
-                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
-              >
+              <div class="h-full bg-[#25334d] w-30 flex rounded-lg px-5">
                 <img
                   src="./imagenes/icons8-viento-de-cola.svg"
                   alt="Tailwind"
@@ -171,7 +161,7 @@
               </div>
             </span>
           </div>
-
+          <!-- texto de cuanto tiempo llevo trabajando -->
           <div
             class="h-full w-[35%] bg-[#151d32] flex flex-col items-center justify-center gap-2 rounded-lg"
           >
@@ -181,7 +171,7 @@
             </p>
             <a
               href="#"
-              class="bg-[#d3e684] rounded-2xl text-xs h-8 w-32 text-center pt-1.5 font-roboto font-semibold uppercase"
+              class="bg-[#d3e684] active:bg-[#cce926] rounded-2xl text-xs h-8 w-32 text-center pt-1.5 font-roboto font-semibold uppercase"
               >download my cv</a
             >
           </div>
@@ -189,16 +179,27 @@
       </span>
       <!-- seccion de habilidades adicionales -->
       <span
-        class="h-[10%] w-full border border-black flex flex-col items-center py-2 gap-2"
-        ><div class="h-[40%] w-[90%]">
+        class="h-[10%] w-full flex flex-col items-center py-2 gap-2 bg-[#25334d] border border-white"
+        ><div class="h-[40%] w-full">
           <h3
             class="text-[#d3e684] uppercase text-center text-xl font-semibold"
           >
             aditional skills
           </h3>
         </div>
-        <div class="h-[60%] w-[90%] border border-black">imagenes</div></span
-      >
+        <!-- imagenes de las habilidades extras -->
+        <div class="h-[60%] flex">
+          <div class="flex flex-row w-full py-1 px-3 gap-1">
+            <img src="./imagenes/icons8-oreja.svg" alt="bootstrap" />
+            <img src="./imagenes/Azios.svg" alt="Azios" />
+            <img src="./imagenes/icons8-redux.svg" alt="redux" />
+            <img src="./imagenes/icons8-material-ui.svg" alt="material-ui" />
+            <img src="./imagenes/icons8-firebase.svg" alt="firebase" />
+            <img src="./imagenes/icons8-wordpress.svg" alt="wordpress" />
+          </div></div
+      ></span>
+      <!-- mis trabajos -->
+      <article class="h-[20%] w-full border border-black"></article>
     </section>
   </body>
 </html>
