@@ -81,11 +81,11 @@
           <img
             src="./imagenes/eliseo-removebg-preview.png"
             alt="Eliseo Borja"
-            class="h-90 z-20 drop-shadow-[0px_-12px_20px_#6a7964]"
+            class="h-90 z-20 drop-shadow-[0px_-20px_50px_#6a7964]"
           />
           <!-- div boton -->
           <div
-            class="h-8 w-30 flex items-center justify-center z-40 absolute bottom-2 right-38"
+            class="h-8 w-30 flex items-center justify-center z-40 absolute bottom-2 right-38 md:static"
           >
             <a
               href="#projects"
@@ -99,9 +99,106 @@
         <div class="hidden"></div>
       </section>
     </main>
-    <!-- seccion who am i -->
-    <section class="h-[20%] w-full bg-[#0b0f22]">
-      <h2 class="text-[#d3e684] uppercase">Who am i?</h2>
+    <!-- seccion who am i y skills -->
+    <section
+      class="h-[76%] w-full bg-slate-400 flex flex-col items-center gap-6"
+    >
+      <!-- primera parte, específicamente who am i ? -->
+      <span
+        class="h-[20%] border border-black flex flex-col p-6 gap-3 justify-center items-center"
+        ><h2
+          class="text-[#d3e684] uppercase text-center text-2xl font-semibold"
+        >
+          Who am i ?
+        </h2>
+        <p class="text-center text-white font-roboto text-xs">
+          I am a front end web developer specialized in JavaScript. Plus i also
+          know some css front and development with html and WooCommerce
+        </p>
+        <p class="text-center text-white font-roboto text-xs">
+          Programming is my passion, that's the reason i am working at the time
+          of my academic career
+        </p>
+        <p class="text-center text-white font-roboto text-xs">
+          Aditionally, i like to play pc games and read story-type books in my
+          leisure time which is kinda fun and relaxing
+        </p>
+        <a
+          href="boton"
+          class="border border-black bg-[#e0ef88] w-[45%] active:bg-[#cce926] py-1.5 rounded-2xl font-bold text-sm text-center"
+          >show my projects</a
+        ></span
+      >
+      <!-- segunda parte mis skills -->
+      <span class="h-[20%] w-full flex flex-col gap-4">
+        <h2 class="text-[#d3e684] uppercase text-center text-2xl font-semibold">
+          my skills
+        </h2>
+        <!-- contenedor de las skills y el tiempo -->
+        <div class="flex flex-row h-full">
+          <!-- contenedores de imagenes de lenguajes -->
+          <div class="flex flex-col gap-1 w-[65%]">
+            <span class="flex flex-row w-full h-[50%] px-6 gap-1">
+              <!-- contenedor html -->
+              <div
+                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
+              >
+                <img src="./imagenes/icons8-html.svg" alt="html" />
+              </div>
+              <!-- contenedor css -->
+              <div
+                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
+              >
+                <img src="./imagenes/icons8-css.svg" alt="css" />
+              </div>
+            </span>
+            <!-- contenedor segundo de imagenes de lenguajes -->
+            <span class="flex flex-row w-full h-[50%] px-6 gap-1">
+              <!-- imagen de javscript -->
+              <div
+                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
+              >
+                <img src="./imagenes/icons8-javascript.svg" alt="JavaScript" />
+              </div>
+              <!-- imagen de tailwind -->
+              <div
+                class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5"
+              >
+                <img
+                  src="./imagenes/icons8-viento-de-cola.svg"
+                  alt="Tailwind"
+                />
+              </div>
+            </span>
+          </div>
+
+          <div
+            class="h-full w-[35%] bg-[#151d32] flex flex-col items-center justify-center gap-2 rounded-lg"
+          >
+            <h2 class="text-4xl text-white font-semibold">2</h2>
+            <p class="text-center text-white font-roboto">
+              months <br />of experience <br />working
+            </p>
+            <a
+              href="#"
+              class="bg-[#d3e684] rounded-2xl text-xs h-8 w-32 text-center pt-1.5 font-roboto font-semibold uppercase"
+              >download my cv</a
+            >
+          </div>
+        </div>
+      </span>
+      <!-- seccion de habilidades adicionales -->
+      <span
+        class="h-[10%] w-full border border-black flex flex-col items-center py-2 gap-2"
+        ><div class="h-[40%] w-[90%]">
+          <h3
+            class="text-[#d3e684] uppercase text-center text-xl font-semibold"
+          >
+            aditional skills
+          </h3>
+        </div>
+        <div class="h-[60%] w-[90%] border border-black">imagenes</div></span
+      >
     </section>
   </body>
 </html>
