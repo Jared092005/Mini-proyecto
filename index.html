@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
   </head>
-  <body class="h-400">
+  <body class="h-400 lg:h-450">
     <!--   logo -->
     <header class="flex justify-between h-[4%] w-full bg-dark">
       <img src="./imagenes/icons8-reaccionar.svg" class="h-full pl-3 lg:w-15" />
@@ -74,11 +74,17 @@
         </div>
       </section>
       <!-- imagenes y boton de mis proyectos -->
-      <section class="h-[70%] w-full lg:flex lg:relative">
+      <section class="h-[70%] w-full relative lg:flex">
         <div
-          class="hidden lg:text-white lg:block lg:absolute lg:bg-amber-800 lg:top-2/4 lg:-rotate-5 lg:left-2"
+          class="absolute top-1/3 max-w-[30%] left-3 text-1 text-white font-roboto p-2 bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 -rotate-5 lg:max-w-[12%] lg:top-2/4 lg:right-2 lg:p-3"
         >
-          hola como estas
+          <h3 class="uppercase text-[12px] font-semibold>review from australia">
+            review from australia
+          </h3>
+          <p class="text-[6px] text-soft-gray">
+            This guy is amazing, a really good layout and very intuitive. Very
+            recommended!
+          </p>
         </div>
         <!-- div imagen -->
         <div
@@ -87,23 +93,25 @@
           <img
             src="./imagenes/eliseo-removebg-preview.png"
             alt="Eliseo Borja"
-            class="h-full z-20 drop-shadow-[0px_0px_50px_#6a7964] lg:w-85"
+            class="h-full z-20 drop-shadow-[0px_0px_45px_#6a7964] lg:w-85"
           />
           <a
             href="#projects"
             target="_blank"
-            class="h-8 w-35 absolute bottom-3 iphone12pro:left-30 iphone14promax:left-36 z-40 text-black text-sm text-center pt-1 font-semibold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] border border-black transition duration-100 lg:left-6/14"
+            class="h-8 w-35 absolute bottom-3 iphone12pro:left-30 iphone14promax:left-36 z-40 text-black text-sm text-center pt-1 font-semibold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] hover:bg-[#cbe440] border border-black transition duration-100 lg:left-6/14"
           >
             MY PROJECTS
           </a>
         </div>
         <div
-          class="hidden lg:text-white lg:block lg:absolute lg:top-2/4 lg:bg-[#1d2236] lg:rounded-2xl lg:shadow-lg lg:shadow-gray-600/50 lg:right-2 lg:rotate-5 lg:p-3 lg:font-roboto"
+          class="absolute top-1/3 right-3 max-w-[40%] text-1 text-white font-roboto p-2 bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 rotate-5 lg:top-2/4 lg:right-2 lg:p-3"
         >
-          <h3 class="uppercase font-semibold">my expertise</h3>
-          <p class="text-sm uppercase text-soft-gray">backend ─────── 68%</p>
-          <p class="text-sm uppercase text-soft-gray">cms ─────── 50%</p>
-          <p class="text-sm uppercase text-soft-gray">frontend ─────── 80%</p>
+          <h3 class="uppercase text-sm font-semibold">my expertise</h3>
+          <p class="text-[8px] uppercase text-soft-gray">backend ─────── 68%</p>
+          <p class="text-[8px] uppercase text-soft-gray">cms ─────── 50%</p>
+          <p class="text-[8px] uppercase text-soft-gray">
+            frontend ─────── 80%
+          </p>
         </div>
       </section>
     </main>
@@ -118,21 +126,21 @@
         >
           Who am i ?
         </h2>
-        <p class="text-center text-white font-roboto text-xs">
+        <p class="text-center text-white font-roboto text-[10px]">
           I am a front end web developer specialized in JavaScript. Plus i also
           know some css front and development with html and WooCommerce
         </p>
-        <p class="text-center text-white font-roboto text-xs">
+        <p class="text-center text-white font-roboto text-[10px]">
           Programming is my passion, that's the reason i am working at the time
           of my academic career
         </p>
-        <p class="text-center text-white font-roboto text-xs">
+        <p class="text-center text-white font-roboto text-[10px]">
           Aditionally, i like to play pc games and read story-type books in my
           leisure time which is kinda fun and relaxing
         </p>
         <a
           href="boton"
-          class="border border-black bg-[#e0ef88] w-[45%] active:bg-[#cce926] py-1.5 rounded-2xl font-semibold text-xs text-center uppercase"
+          class="border border-black bg-[#e0ef88] w-[45%] active:bg-[#cce926] hover:bg-[#cbe440] py-1.5 rounded-2xl font-semibold text-xs text-center uppercase"
           >show my projects</a
         ></span
       >
@@ -145,6 +153,7 @@
         <div class="flex flex-row gap-2 h-full">
           <!-- contenedores de imagenes de lenguajes -->
           <div class="flex flex-col gap-1 w-[65%]">
+            <!-- primer contenedor de lenguajes -->
             <span class="flex flex-row w-full h-[50%] gap-1">
               <!-- contenedor html -->
               <div
@@ -160,7 +169,7 @@
               </div>
             </span>
             <!-- contenedor segundo de imagenes de lenguajes -->
-            <span class="flex flex-row w-full h-[50%] gap-1">
+            <span class="flex flex-row w-full h-[50%] gap-1.5">
               <!-- imagen de javscript -->
               <div class="h-full bg-[#25334d] w-30 flex rounded-lg px-5">
                 <img src="./imagenes/icons8-javascript.svg" alt="JavaScript" />
@@ -184,7 +193,7 @@
             </p>
             <a
               href="#"
-              class="bg-[#d3e684] active:bg-[#cce926] rounded-2xl text-xs w-[87%] text-center p-1 font-roboto font-semibold uppercase"
+              class="bg-[#d3e684] active:bg-[#cce926] hover:bg-[#cbe440] rounded-2xl text-xs w-[87%] text-center p-1 font-roboto font-semibold uppercase"
               >download my cv</a
             >
           </div>
@@ -243,7 +252,7 @@
           </h1>
           <a
             href="#"
-            class="bg-[#d3e684] active:bg-[#cce926] w-[90%] p-1 rounded-2xl text-center font-semibold uppercase"
+            class="bg-[#d3e684] active:bg-[#cce926] hover:bg-[#cbe440] w-[90%] p-1 rounded-2xl text-center font-semibold uppercase"
             >show my projects</a
           ></span
         >
@@ -287,7 +296,7 @@
         <span class="w-full flex px-6">
           <a
             href="#"
-            class="w-full text-center uppercase font-semibold text-sm py-1.5 rounded-2xl bg-[#d3e684] active:bg-[#cce926]"
+            class="w-full text-center uppercase font-semibold text-sm py-1.5 rounded-2xl bg-[#d3e684] active:bg-[#cce926] hover:bg-[#cbe440]"
             >submit here</a
           ></span
         >
