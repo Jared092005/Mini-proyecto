@@ -16,11 +16,11 @@
   <body class="h-400">
     <!--   logo -->
     <header class="flex justify-between h-[4%] w-full bg-dark">
-      <img src="./imagenes/icons8-reaccionar.svg" class="h-full pl-3" />
+      <img src="./imagenes/icons8-reaccionar.svg" class="h-full pl-3 lg:w-15" />
 
       <!-- navigation bar -->
       <nav
-        class="text-xs flex flex-row items-center gap-5 text-white font-[roboto]"
+        class="text-xs flex flex-row items-center gap-5 text-white font-[roboto] lg:text-lg"
       >
         <a href="">ABOUT ME</a><a href="">SKILLS</a><a href="">PROJECTS</a>
       </nav>
@@ -28,10 +28,10 @@
       <!-- contacto -->
       <div class="text-xs flex flex-row items-center pr-4 gap-2">
         <div
-          class="flex flex-row items-center gap-1 border border-white rounded-2xl h-7"
+          class="flex flex-row items-center gap-1 border border-white rounded-2xl h-7 lg:gap-0"
         >
-          <div class="w-15 rounded-2xl text-white pl-2 font-[roboto]">
-            <p class="text-[12px]">CONTACT</p>
+          <div class="w-15 rounded-2xl text-white pl-2 font-[roboto] lg:w-24">
+            <p class="text-3 lg:text-lg">CONTACT</p>
           </div>
           <div
             class="w-6 h-6 bg-[#e0ef88] active:bg-[#929974] flex items-center justify-center rounded-2xl"
@@ -49,13 +49,13 @@
 
     <!-- parte principal con la imagen  -->
     <main
-      class="h-[30%] bg-linear-to-t from-[#334c75] to-dark flex flex-col items-center justify-center"
+      class="h-[30%] bg-linear-to-t from-deep-blue to-dark flex flex-col items-center justify-center"
     >
       <!-- parte donde dice mi nombre -->
       <section class="h-[30%] w-full">
         <!-- parte de arriba -->
         <div
-          class="flex items-end justify-center h-[50%] font-[roboto] gap-1 text-3xl"
+          class="flex items-end justify-center h-[50%] font-[roboto] gap-1 text-3xl lg:text-5xl"
         >
           <p class="text-white">
             I'm <span class="text-[#d3e684]">Eliseo Borja</span>
@@ -63,12 +63,14 @@
         </div>
         <!-- parte de abajo -->
         <div
-          class="h-[50%] flex flex-row justify-center font-[roboto] text-white text-3xl gap-0.5"
+          class="h-[50%] w-full flex flex-row items-start justify-center font-[roboto] text-white text-3xl gap-0.5 lg:h-full lg:w-full lg:text-5xl lg:pr-12"
         >
-          <p class="h-10 w-35 text-center rounded-md border border-white">
+          <p
+            class="h-10 w-35 text-center rounded-md border border-white lg:text-5xl lg:h-[39%] lg:w-55 lg:text-end lg:pr-1 lg:pt-0.5"
+          >
             Front End
           </p>
-          <p class="h-8">Developer</p>
+          <p class="h-8 w-35 text-start">Developer</p>
         </div>
       </section>
       <!-- imagenes y boton de mis proyectos -->
@@ -76,12 +78,12 @@
         <div class="hidden"></div>
         <!-- div imagen -->
         <div
-          class="h-full flex flex-col items-center justify-center pl-8 pb-6 relative"
+          class="h-full flex flex-col items-center justify-center pl-8 relative overflow-hidden"
         >
           <img
             src="./imagenes/eliseo-removebg-preview.png"
             alt="Eliseo Borja"
-            class="h-90 z-20 drop-shadow-[0px_-20px_50px_#6a7964]"
+            class="h-full z-20 drop-shadow-[0px_0px_40px_#6a7964]"
           />
           <a
             href="#projects"
