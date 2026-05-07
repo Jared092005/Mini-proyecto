@@ -14,3 +14,7 @@
   --breakpoint-iphone12pro: 370px;
   --breakpoint-iphone14promax: 430px;
 }
+
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+}

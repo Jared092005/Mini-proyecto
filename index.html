@@ -55,7 +55,7 @@
       <section class="h-[30%] w-full">
         <!-- parte de arriba -->
         <div
-          class="flex items-end justify-center h-[50%] font-[roboto] gap-1 text-3xl lg:text-5xl"
+          class="flex items-end justify-center h-[50%] font-roboto gap-1 text-3xl lg:text-5xl"
         >
           <p class="text-white">
             I'm <span class="text-[#d3e684]">Eliseo Borja</span>
@@ -74,26 +74,37 @@
         </div>
       </section>
       <!-- imagenes y boton de mis proyectos -->
-      <section class="h-[70%] w-full">
-        <div class="hidden"></div>
+      <section class="h-[70%] w-full lg:flex lg:relative">
+        <div
+          class="hidden lg:text-white lg:block lg:absolute lg:bg-amber-800 lg:top-2/4 lg:-rotate-5 lg:left-2"
+        >
+          hola como estas
+        </div>
         <!-- div imagen -->
         <div
-          class="h-full flex flex-col items-center justify-center pl-8 relative overflow-hidden"
+          class="h-full flex flex-col items-center justify-center pl-8 relative overflow-hidden lg:w-full"
         >
           <img
             src="./imagenes/eliseo-removebg-preview.png"
             alt="Eliseo Borja"
-            class="h-full z-20 drop-shadow-[0px_0px_40px_#6a7964]"
+            class="h-full z-20 drop-shadow-[0px_0px_50px_#6a7964] lg:w-85"
           />
           <a
             href="#projects"
             target="_blank"
-            class="h-8 w-35 absolute bottom-3 iphone12pro:left-30 iphone14promax:left-36 z-40 text-black text-sm text-center pt-1 font-semibold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] border border-black transition duration-100"
+            class="h-8 w-35 absolute bottom-3 iphone12pro:left-30 iphone14promax:left-36 z-40 text-black text-sm text-center pt-1 font-semibold bg-[#e0ef88] rounded-2xl active:bg-[#cce926] border border-black transition duration-100 lg:left-6/14"
           >
             MY PROJECTS
           </a>
         </div>
-        <div class="hidden"></div>
+        <div
+          class="hidden lg:text-white lg:block lg:absolute lg:top-2/4 lg:bg-[#1d2236] lg:rounded-2xl lg:shadow-lg lg:shadow-gray-600/50 lg:right-2 lg:rotate-5 lg:p-3 lg:font-roboto"
+        >
+          <h3 class="uppercase font-semibold">my expertise</h3>
+          <p class="text-sm uppercase text-soft-gray">backend ─────── 68%</p>
+          <p class="text-sm uppercase text-soft-gray">cms ─────── 50%</p>
+          <p class="text-sm uppercase text-soft-gray">frontend ─────── 80%</p>
+        </div>
       </section>
     </main>
     <!-- seccion who am i y skills -->
