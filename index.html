@@ -303,14 +303,12 @@
           </div></div
       ></span>
       <!-- mis trabajos -->
-      <article
-        class="h-[18%] w-full flex flex-row items-center border border-white"
-      >
+      <article class="h-[18%] w-full flex flex-row items-center">
         <!-- los trabajos y el boton -->
         <span
           class="h-full w-[60%] flex flex-col items-center justify-center p-2"
           ><h1
-            class="text-center uppercase text-white text-3xl font-semibold h-[70%] lg:text-4xl w-[45%]"
+            class="text-center uppercase text-white text-2xl font-semibold h-[70%] lg:text-4xl lg:w-[45%]"
           >
             the works closest to my heart
           </h1>
@@ -321,17 +319,43 @@
           ></span
         >
         <!-- foto del plomero -->
-        <span class="h-full w-[40%]">
-          <div class="h-full w-full">
+        <span class="h-full w-[40%] lg:flex lg:w-[65%] gap-3">
+          <div class="h-full w-full lg:w-[50%] relative">
             <img
               src="./imagenes/image.png"
               alt="plumber guy"
-              class="h-full rounded-2xl"
+              class="h-full rounded-2xl w-full object-cover"
             />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+            <p
+              class="absolute text-white text-sm font-semibold bottom-4 left-1/3 lg:text-xl"
+            >
+              Plumbing <br />Company
+            </p>
           </div>
           <!-- otras dos fotos como el ejemplo -->
-          <div class="hidden"></div>
-          <div class="hidden"></div>
+          <div class="hidden lg:block lg:w-[25%] lg:relative">
+            <img
+              src="./imagenes/empire-state.jpg"
+              alt="empire empire-state"
+              class="h-full rounded-2xl object-cover w-50"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"
+            ></div>
+          </div>
+          <div class="hidden lg:block lg:w-[25%] lg:relative">
+            <img
+              src="./imagenes/spray.jpg"
+              alt="imagen spray"
+              class="h-full object-cover rounded-2xl"
+            />
+            <div
+              class="absolute inset-0 bg-linear-to-t from-black/50 via-black/10 to-transparent"
+            ></div>
+          </div>
         </span>
       </article>
       <!-- apartado de contacto con mensaje -->
