@@ -12,21 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="./scripts/main.js"></script>
   </head>
   <body class="h-400 lg:h-500">
     <!--   logo -->
-    <header class="flex justify-between h-[4%] w-full bg-dark lg:px-8">
+    <header
+      class="flex justify-between h-[4%] w-full bg-[#ecde58] dark:bg-dark lg:px-8"
+    >
       <img src="./imagenes/icons8-reaccionar.svg" class="h-full pl-3 lg:w-15" />
 
       <!-- navigation bar -->
-      <nav
-        class="text-xs flex flex-row items-center gap-5 text-white font-[roboto] lg:text-lg"
-      >
+      <nav class="hidden lg:flex lg:text-lg">
         <a href="">ABOUT ME</a><a href="">SKILLS</a><a href="">PROJECTS</a>
       </nav>
 
       <!-- contacto -->
-      <div class="text-xs flex flex-row items-center pr-4 gap-2">
+      <div class="hidden">
         <div
           class="flex flex-row items-center gap-1 border border-white rounded-2xl h-7 lg:gap-0"
         >
@@ -45,11 +46,24 @@
           </div>
         </div>
       </div>
+      <!-- boton de dark mode -->
+      <section class="relative inline-block w-[30%]">
+        <div class="absolute top-5 left-10">
+          <input
+            class="peer h-6 w-12 cursor-pointer appearance-none rounded-full border border-gray-300 bg-gray-400 checked:border-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 focus-visible:ring-offset-2"
+            type="checkbox"
+            id="btndark"
+          />
+          <span
+            class="pointer-events-none absolute left-1 top-1 block h-4 w-4 rounded-full bg-white transition-all duration-200 peer-checked:left-7 peer-checked:bg-gray-600"
+          ></span>
+        </div>
+      </section>
     </header>
 
     <!-- parte principal con la imagen  -->
     <main
-      class="h-[30%] bg-linear-to-t from-deep-blue to-dark flex flex-col items-center justify-center"
+      class="h-[30%] bg-[#f8f6e5] dark:bg-linear-to-t from-deep-blue to-dark flex flex-col items-center justify-center"
     >
       <!-- parte donde dice mi nombre -->
       <section class="h-[30%] w-full">
@@ -57,16 +71,17 @@
         <div
           class="flex items-end justify-center h-[50%] font-roboto gap-1 text-3xl lg:text-5xl"
         >
-          <p class="text-white">
-            I'm <span class="text-[#e0ef88]">Eliseo Borja</span>
+          <p class="text-black dark:text-white">
+            I'm
+            <span class="text-[#42af16] dark:text-[#e0ef88]">Eliseo Borja</span>
           </p>
         </div>
         <!-- parte de abajo -->
         <div
-          class="h-[50%] w-full flex flex-row items-start justify-center font-[roboto] text-white text-3xl gap-0.5 lg:h-full lg:w-full lg:text-5xl lg:pr-12"
+          class="h-[50%] w-full flex flex-row items-start justify-center font-[roboto] text-black dark:text-white text-3xl gap-0.5 lg:h-full lg:w-full lg:text-5xl lg:pr-12"
         >
           <p
-            class="h-10 w-35 text-center rounded-md border border-white lg:text-5xl lg:h-[39%] lg:w-55 lg:text-end lg:pr-1 lg:pt-0.5"
+            class="h-10 w-35 text-center rounded-md border border-black dark:border-white lg:text-5xl lg:h-[39%] lg:w-55 lg:text-end lg:pr-1 lg:pt-0.5"
           >
             Front End
           </p>
@@ -76,12 +91,12 @@
       <!-- imagenes y boton de mis proyectos -->
       <section class="h-[70%] w-full relative lg:flex">
         <div
-          class="absolute top-1/3 max-w-[30%] left-3 text-1 z-40 text-white font-roboto p-2 bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 -rotate-5 lg:max-w-[20%] lg:top-2/6 lg:right-2 lg:p-3"
+          class="absolute top-1/3 max-w-[30%] left-3 text-1 z-40 text-[black] dark:text-white font-roboto p-2 bg-[#dfd89b] dark:bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 -rotate-5 lg:max-w-[20%] lg:top-2/6 lg:right-2 lg:p-3"
         >
           <h3 class="text-[12px] font-semibold lg:text-lg">
             Client Review From Australia
           </h3>
-          <p class="text-[6px] text-soft-gray lg:text-xs">
+          <p class="text-[6px] text-[#707070] dark:text-soft-gray lg:text-xs">
             This guy is amazing, a really good layout and very intuitive. Very
             recommended!
           </p>
@@ -104,18 +119,24 @@
           </a>
         </div>
         <div
-          class="absolute top-1/3 right-3 max-w-[40%] z-40 text-1 text-white font-roboto p-2 bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 rotate-5 lg:max-w-[20%] lg:top-2/6 lg:right-2 lg:p-3"
+          class="absolute top-1/3 right-3 max-w-[40%] z-40 text-1 text-black dark:text-white font-roboto p-2 bg-[#dfd89b] dark:bg-[#1d2236] rounded-2xl shadow-lg shadow-gray-600/50 rotate-5 lg:max-w-[20%] lg:top-2/6 lg:right-2 lg:p-3"
         >
           <h3 class="uppercase text-sm font-semibold lg:text-xl">
             my expertise
           </h3>
-          <p class="text-[8px] uppercase text-soft-gray lg:text-sm">
+          <p
+            class="text-[8px] uppercase text-[#707070] dark:text-soft-gray lg:text-sm"
+          >
             backend ─────── 68%
           </p>
-          <p class="text-[8px] uppercase text-soft-gray lg:text-sm">
+          <p
+            class="text-[8px] uppercase text-[#707070] dark:text-soft-gray lg:text-sm"
+          >
             cms ─────── 50%
           </p>
-          <p class="text-[8px] uppercase text-soft-gray lg:text-sm">
+          <p
+            class="text-[8px] uppercase text-[#707070] dark:text-soft-gray lg:text-sm"
+          >
             frontend ─────── 80%
           </p>
         </div>
@@ -123,7 +144,7 @@
     </main>
     <!-- seccion who am i y skills -->
     <section
-      class="h-[76%] bg-dark w-full flex flex-col items-center gap-6 px-4"
+      class="h-[76%] bg-[#f8f6e5] dark:bg-dark w-full flex flex-col items-center gap-6 px-4"
     >
       <!-- primera parte, específicamente who am i ? -->
       <span
@@ -155,29 +176,29 @@
         </div>
         <!-- parte de who am i -->
         <h2
-          class="text-[#d3e684] uppercase text-center text-2xl font-semibold lg:text-4xl"
+          class="text-black dark:text-[#d3e684] uppercase text-center text-2xl font-semibold lg:text-4xl"
         >
           Who am i ?
         </h2>
         <div
-          class="flex flex-col items-center gap-2.5 lg:gap-4 lg:h-70 lg:justify-center lg:w-[75%]"
+          class="flex flex-col items-center gap-2.5 text-[#707070] dark:text-white lg:gap-4 lg:h-70 lg:justify-center lg:w-[75%]"
         >
-          <p class="text-center text-white font-roboto text-[10px] lg:text-sm">
+          <p class="text-center font-roboto text-[10px] lg:text-sm">
             I am a front end web developer specialized in JavaScript. Plus i
             also know some css front and development with html and WooCommerce
           </p>
-          <p class="text-center text-white font-roboto text-[10px] lg:text-sm">
+          <p class="text-center font-roboto text-[10px] lg:text-sm">
             Programming is my passion, that's the reason i am working at the
             time of my academic career
           </p>
-          <p class="text-center text-white font-roboto text-[10px] lg:text-sm">
+          <p class="text-center font-roboto text-[10px] lg:text-sm">
             Aditionally, i like to play pc games and read story-type books in my
             leisure time which is kinda fun and relaxing
           </p>
           <a
             href="https://github.com/Jared092005"
             target="_blank"
-            class="border border-black bg-[#e0ef88] w-[45%] active:bg-[#cce926] hover:bg-[#cbe440] py-1.5 rounded-2xl font-semibold text-xs text-center uppercase"
+            class="border border-black text-black bg-[#e0ef88] w-[45%] active:bg-[#cce926] hover:bg-[#cbe440] py-1.5 rounded-2xl font-semibold text-xs text-center uppercase"
             >show my projects</a
           >
         </div>
@@ -185,7 +206,7 @@
       <!-- segunda parte mis skills -->
       <span class="h-[20%] w-full flex flex-col gap-4">
         <h2
-          class="text-[#d3e684] uppercase text-center text-2xl font-semibold lg:text-4xl"
+          class="text-black dark:text-[#d3e684] uppercase text-center text-2xl font-semibold lg:text-4xl"
         >
           my skills
         </h2>
@@ -197,17 +218,17 @@
             <div class="h-full flex flex-col gap-1 lg:w-full lg:flex-row">
               <!-- primer contenedor -->
               <span
-                class="flex flex-row w-full h-[50%] gap-1 lg:w-full lg:h-full border"
+                class="flex flex-row w-full h-[50%] gap-1 lg:w-full lg:h-full"
               >
                 <!-- contenedor html -->
                 <div
-                  class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
+                  class="h-full bg-[#dfd89b] dark:bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
                 >
                   <img src="./imagenes/icons8-html.svg" alt="html" />
                 </div>
                 <!-- contenedor css -->
                 <div
-                  class="border border-black h-full bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
+                  class="h-full bg-[#dfd89b] dark:bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
                 >
                   <img src="./imagenes/icons8-css.svg" alt="css" />
                 </div>
@@ -218,7 +239,7 @@
               >
                 <!-- imagen de javscript -->
                 <div
-                  class="h-full bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
+                  class="h-full bg-[#dfd89b] dark:bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
                 >
                   <img
                     src="./imagenes/icons8-javascript.svg"
@@ -227,7 +248,7 @@
                 </div>
                 <!-- imagen de tailwind -->
                 <div
-                  class="h-full bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
+                  class="h-full bg-[#dfd89b] dark:bg-[#25334d] w-30 flex rounded-lg px-5 lg:w-full"
                 >
                   <img
                     src="./imagenes/icons8-viento-de-cola.svg"
@@ -240,11 +261,15 @@
           </div>
           <!-- texto de cuanto tiempo llevo trabajando -->
           <div
-            class="h-full w-[35%] bg-[#151d32] flex flex-col items-center justify-center gap-2 rounded-lg lg:gap-3.5"
+            class="h-full w-[35%] bg-[#dfd89b] dark:bg-[#151d32] flex flex-col items-center justify-center gap-2 rounded-lg lg:gap-3.5"
           >
-            <h2 class="text-4xl text-white font-semibold lg:text-6xl">2</h2>
+            <h2
+              class="text-4xl text-black dark:text-white font-semibold lg:text-6xl"
+            >
+              2
+            </h2>
             <p
-              class="text-center text-white font-roboto lg:text-xl lg:font-bold"
+              class="text-center text-black dark:text-white font-roboto lg:text-xl lg:font-bold"
             >
               months <br />of experience <br />working
             </p>
@@ -259,10 +284,10 @@
       </span>
       <!-- seccion de habilidades adicionales -->
       <span
-        class="h-[9%] w-full flex flex-col items-center py-2 gap-2 bg-[#25334d] rounded-lg lg:h-[11%]"
+        class="h-[9%] w-full flex flex-col items-center py-2 gap-2 bg-[#dfd89b] dark:bg-[#25334d] rounded-lg lg:h-[11%]"
         ><div class="h-[40%] w-full">
           <h3
-            class="text-[#d3e684] uppercase text-center text-xl font-semibold lg:text-3xl"
+            class="text-black dark:text-[#d3e684] uppercase text-center text-xl font-semibold lg:text-3xl"
           >
             aditional skills
           </h3>
@@ -303,12 +328,12 @@
           </div></div
       ></span>
       <!-- mis trabajos -->
-      <article class="h-[18%] w-full flex flex-row items-center">
+      <article class="h-[18%] w-full flex flex-row items-center gap-2">
         <!-- los trabajos y el boton -->
         <span
-          class="h-full w-[60%] flex flex-col items-center justify-center p-2"
+          class="h-full w-[60%] flex flex-col items-center justify-center bg-[#dfd89b] p-2 rounded-2xl"
           ><h1
-            class="text-center uppercase text-white text-2xl font-semibold h-[70%] lg:text-4xl lg:w-[45%]"
+            class="text-center uppercase text-black dark:text-white text-2xl font-semibold h-[70%] lg:text-4xl lg:w-[45%]"
           >
             the works closest to my heart
           </h1>
@@ -324,13 +349,13 @@
             <img
               src="./imagenes/image.png"
               alt="plumber guy"
-              class="h-full rounded-2xl w-full object-cover"
+              class="h-full w-full object-cover rounded-2xl"
             />
             <div
-              class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"
+              class="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent rounded-2xl"
             ></div>
             <p
-              class="absolute text-white text-sm font-semibold bottom-4 left-1/3 lg:text-xl"
+              class="absolute text-white text-sm font-semibold bottom-4 left-9 lg:text-xl"
             >
               Plumbing <br />Company
             </p>
@@ -360,7 +385,7 @@
       </article>
       <!-- apartado de contacto con mensaje -->
       <footer
-        class="h-[23%] w-full flex flex-col items-center justify-center bg-white rounded-2xl gap-4 border border-black lg:h-[21%]"
+        class="h-[23%] w-full flex flex-col items-center justify-center bg-white rounded-2xl gap-4 lg:h-[21%]"
       >
         <!-- titulo del apartado -->
         <h2 class="text-3xl font-semibold uppercase">Let's have a chat</h2>
