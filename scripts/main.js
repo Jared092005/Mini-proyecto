@@ -20,6 +20,14 @@ let eliseoB = [
     imgJs: "./imagenes/icons8-javascript.svg",
     imgTailwind: "./imagenes/icons8-viento-de-cola.svg",
   },
+  {
+    imgBootstrap: "./imagenes/icons8-oreja.svg",
+    imgAzios: "./imagenes/Azios.svg",
+    imgRedux: "./imagenes/icons8-redux.svg",
+    imgMateriaulUi: "./imagenes/icons8-material-ui.svg",
+    imgFireBase: "./imagenes/icons8-firebase.svg",
+    imgWordPress: "./imagenes/icons8-wordpress.svg",
+  },
 ];
 
 let contenedorLenguajes = document.querySelector("#contenedor-Imagenes");
@@ -27,23 +35,62 @@ let contenedorLenguajes = document.querySelector("#contenedor-Imagenes");
 function imagenesHabilidades(contenido) {
   let cajasLenguajes = "";
   let imagenes = eliseoB[1];
-  cajasLenguajes += `<div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square lg:h-full lg:w-full">
-      <img src="${imagenes.imgHtml}" alt="html" class="w-16 h-16 object-contain lg:h-full lg:w-[90%]" />
+  cajasLenguajes += `<div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square md:h-full md:w-full">
+      <img src="${imagenes.imgHtml}" alt="html" class="w-16 h-16 object-contain md:h-[80%] md:w-[90%] lg:h-[60%]" />
     </div>
     
-    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square lg:h-full lg:w-full">
-      <img src="${imagenes.imgCss}" alt="css" class="w-16 h-16 object-contain lg:h-full lg:w-[90%]" />
+    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square md:h-full md:w-full">
+      <img src="${imagenes.imgCss}" alt="css" class="w-16 h-16 object-contain md:h-[70%] md:w-[90%] lg:h-[60%]" />
     </div>
 
-    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square lg:h-full lg:w-full">
-      <img src="${imagenes.imgJs}" alt="javascript" class="w-16 h-16 object-contain lg:h-full lg:w-[90%]" />
+    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square md:h-full md:w-full">
+      <img src="${imagenes.imgJs}" alt="javascript" class="w-16 h-16 object-contain md:h-[60%] md:w-[90%] lg:h-[55%]" />
     </div>
 
-    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square lg:h-full lg:w-full ">
-      <img src="${imagenes.imgTailwind}" alt="tailwind" class="w-16 h-16 object-contain border border-black lg:h-full lg:w-[90%]" />
+    <div class="bg-[#dfd89b] dark:bg-[#25334d] flex justify-center items-center rounded-lg p-4 aspect-square md:h-full md:w-full ">
+      <img src="${imagenes.imgTailwind}" alt="tailwind" class="w-16 h-16 object-contain md:h-[70%] md:w-[90%] lg:h-[60%]" />
     </div>
   `;
   contenido.innerHTML = cajasLenguajes;
 }
 
 imagenesHabilidades(contenedorLenguajes);
+
+let habilidadesExtra = document.querySelector("#habilidades-Extra");
+
+function imgHabilidadesExtra(contenido) {
+  let resultado = "";
+  let imagenesExtra = eliseoB[2];
+  resultado += `<div class="flex flex-row w-full h-full overflow-hidden lg:pl-12">
+  <img
+    src="./imagenes/icons8-oreja.svg"
+    alt="bootstrap"
+    class="w-[20%] lg:w-[15%]"
+  />
+  <img src="./imagenes/Azios.svg" alt="Azios" class="w-[20%] lg:w-[15%]" />
+  <img
+    src="./imagenes/icons8-redux.svg"
+    alt="redux"
+    class="w-[20%] lg:w-[15%]"
+  />
+  <img
+    src="./imagenes/icons8-material-ui.svg"
+    alt="material-ui"
+    class="w-[20%] lg:w-[15%]"
+  />
+  <img
+    src="./imagenes/icons8-firebase.svg"
+    alt="firebase"
+    class="w-[20%] lg:w-[15%]"
+  />
+  <img
+    src="./imagenes/icons8-wordpress.svg"
+    alt="wordpress"
+    class="w-[20%] lg:w-[15%]"
+  />
+</div>
+  `;
+  contenido.innerHTML = resultado;
+}
+
+imgHabilidadesExtra(habilidadesExtra);
