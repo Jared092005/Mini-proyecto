@@ -94,3 +94,40 @@ function imgHabilidadesExtra(contenido) {
 }
 
 imgHabilidadesExtra(habilidadesExtra);
+
+//Mi nombre
+let cartaELiseo = document.querySelector("#carta-nombre");
+
+const nombreEliseo = eliseoB[0].nombre;
+
+function ponerNombre(contenido) {
+  let guardarTexto = "";
+
+  guardarTexto += `  <p class="text-black dark:text-white">
+            I'm
+            <span class="text-[#c8df48] dark:text-[#e0ef88]">${nombreEliseo}</span>
+          </p>`;
+  contenido.innerHTML = guardarTexto;
+}
+
+ponerNombre(cartaELiseo);
+
+//Tipo de desarrolador que soy
+
+const tipoDesarrollador = ` <p
+            class="h-10 w-35 text-center rounded-md border border-black dark:border-white lg:text-5xl lg:h-[39%] lg:w-55 lg:text-end lg:pr-1 lg:pt-0.5"
+          >
+            Front End
+          </p>
+          <p class="h-8 w-35 text-start">Developer</p>`;
+
+let cartaDesarrollador = document.querySelector("#carta-developer");
+
+function parteAbajoDesarrollador(contenido) {
+  let guardarTexto = "";
+  guardarTexto += `${tipoDesarrollador}`;
+
+  contenido.innerHTML = guardarTexto;
+}
+
+parteAbajoDesarrollador(cartaDesarrollador);
