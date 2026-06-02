@@ -23,10 +23,31 @@
 
       <!-- navigation bar -->
       <nav
-        class="hidden lg:flex lg:text-lg lg:text-white lg:w-full lg:justify-center lg:items-center lg:gap-5 lg:pl-8 xl:pl-40"
+        class="hidden relative lg:flex lg:text-lg lg:text-white lg:w-full lg:justify-center lg:items-center lg:gap-5 lg:pl-8 xl:pl-40"
       >
-        <a href="">ABOUT ME</a><a href="">SKILLS</a><a href="">PROJECTS</a>
+        <a href="./index.html">ABOUT ME</a
+        ><a class="hover:underline-offset-1" href="./index.html">SKILLS</a
+        ><a href="./index.html">PROJECTS</a>
       </nav>
+      <div
+        class="w-full flex flex-col items-center justify-end absolute top-4 left-1"
+        id="btn-hamburguesa"
+      >
+        <img
+          src="./imagenes/menu-hamburguesa.svg"
+          alt="menu-hamburguesa"
+          class="w-8"
+        />
+      </div>
+      <div class="hidden" id="menu-hamburguesa">
+        <div
+          class="flex flex-col bg-white p-4 gap-2 border border-black absolute top-16 left-1 transition delay-200 duration-400"
+        >
+          <a href="./index.html">ABOUT ME</a
+          ><a class="hover:underline-offset-1" href="./index.html">SKILLS</a
+          ><a href="./index.html">PROJECTS</a>
+        </div>
+      </div>
 
       <!-- contacto -->
       <div class="hidden">
@@ -48,6 +69,7 @@
           </div>
         </div>
       </div>
+
       <!-- boton de dark mode -->
       <section class="relative inline-block w-[30%]">
         <div

@@ -131,3 +131,13 @@ function parteAbajoDesarrollador(contenido) {
 }
 
 parteAbajoDesarrollador(cartaDesarrollador);
+
+const menuHamburguesa = document.querySelector("#menu-hamburguesa");
+
+let btnHamburguesa = document.querySelector("#btn-hamburguesa");
+
+function mostrarOcultarMenu() {
+  menuHamburguesa.classList.toggle("hidden");
+}
+
+btnHamburguesa.addEventListener("click", mostrarOcultarMenu);
