@@ -63,7 +63,7 @@ function imgHabilidadesExtra(contenido) {
   let imagenesExtra = eliseoB[2];
   resultado += `<div class="flex flex-row w-full h-full overflow-hidden lg:pl-12">
   <img
-    src="../assets/icons8-oreja.svg"
+    src="./icons8-oreja.svg"
     alt="bootstrap"
     class="w-[20%] lg:w-[15%]"
   />
