@@ -67,24 +67,24 @@ function imgHabilidadesExtra(contenido) {
     alt="bootstrap"
     class="w-[20%] lg:w-[15%]"
   />
-  <img src="./public/Azios.svg" alt="Azios" class="w-[20%] lg:w-[15%]" />
+  <img src="/public/Azios.svg" alt="Azios" class="w-[20%] lg:w-[15%]" />
   <img
-    src="./public/icons8-redux.svg"
+    src="/public/icons8-redux.svg"
     alt="redux"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./public/icons8-material-ui.svg"
+    src="/public/icons8-material-ui.svg"
     alt="material-ui"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./public/icons8-firebase.svg"
+    src="/public/icons8-firebase.svg"
     alt="firebase"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./public/icons8-wordpress.svg"
+    src="/public/icons8-wordpress.svg"
     alt="wordpress"
     class="w-[20%] lg:w-[15%]"
   />
