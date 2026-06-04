@@ -3,12 +3,15 @@ import tailwindcss from "@tailwindcss/vite";
 /* import { resolve } from "path"; */
 
 export default defineConfig({
-  plugins: [tailwindcss()],
-  /*  build: {
-    rollupOptions: {
-      input: {
-        main: resolveConfig(__dirname, "index.html"),
-      },
-    },
-  }, */
+  plugins: [
+    tailwindcss(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: "assets",
+          dest: ".",
+        },
+      ],
+    }),
+  ],
 });
