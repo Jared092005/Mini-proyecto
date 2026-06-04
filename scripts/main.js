@@ -15,10 +15,10 @@ let eliseoB = [
     fotoPerfil3: "./img/fotoEnElHospital.jpeg",
   },
   {
-    imgHtml: "./public/icons8-html.svg",
-    imgCss: "./public/icons8-css.svg",
-    imgJs: "./public/icons8-javascript.svg",
-    imgTailwind: "./public/icons8-viento-de-cola.svg",
+    imgHtml: "./icons8-html.svg",
+    imgCss: "./icons8-css.svg",
+    imgJs: "./icons8-javascript.svg",
+    imgTailwind: "./icons8-viento-de-cola.svg",
   },
   {
     imgBootstrap: "./public/icons8-oreja.svg",
