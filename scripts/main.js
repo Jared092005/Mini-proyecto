@@ -15,18 +15,18 @@ let eliseoB = [
     fotoPerfil3: "./img/fotoEnElHospital.jpeg",
   },
   {
-    imgHtml: "./imagenes/icons8-html.svg",
-    imgCss: "./imagenes/icons8-css.svg",
-    imgJs: "./imagenes/icons8-javascript.svg",
-    imgTailwind: "./imagenes/icons8-viento-de-cola.svg",
+    imgHtml: "./public/icons8-html.svg",
+    imgCss: "./public/icons8-css.svg",
+    imgJs: "./public/icons8-javascript.svg",
+    imgTailwind: "./public/icons8-viento-de-cola.svg",
   },
   {
-    imgBootstrap: "./imagenes/icons8-oreja.svg",
-    imgAzios: "./imagenes/Azios.svg",
-    imgRedux: "./imagenes/icons8-redux.svg",
-    imgMateriaulUi: "./imagenes/icons8-material-ui.svg",
-    imgFireBase: "./imagenes/icons8-firebase.svg",
-    imgWordPress: "./imagenes/icons8-wordpress.svg",
+    imgBootstrap: "./public/icons8-oreja.svg",
+    imgAzios: "./public/Azios.svg",
+    imgRedux: "./public/icons8-redux.svg",
+    imgMateriaulUi: "./public/icons8-material-ui.svg",
+    imgFireBase: "./public/icons8-firebase.svg",
+    imgWordPress: "./public/icons8-wordpress.svg",
   },
 ];
 
@@ -63,28 +63,28 @@ function imgHabilidadesExtra(contenido) {
   let imagenesExtra = eliseoB[2];
   resultado += `<div class="flex flex-row w-full h-full overflow-hidden lg:pl-12">
   <img
-    src="./imagenes/icons8-oreja.svg"
+    src="./public/icons8-oreja.svg"
     alt="bootstrap"
     class="w-[20%] lg:w-[15%]"
   />
-  <img src="./imagenes/Azios.svg" alt="Azios" class="w-[20%] lg:w-[15%]" />
+  <img src="./public/Azios.svg" alt="Azios" class="w-[20%] lg:w-[15%]" />
   <img
-    src="./imagenes/icons8-redux.svg"
+    src="./public/icons8-redux.svg"
     alt="redux"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./imagenes/icons8-material-ui.svg"
+    src="./public/icons8-material-ui.svg"
     alt="material-ui"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./imagenes/icons8-firebase.svg"
+    src="./public/icons8-firebase.svg"
     alt="firebase"
     class="w-[20%] lg:w-[15%]"
   />
   <img
-    src="./imagenes/icons8-wordpress.svg"
+    src="./public/icons8-wordpress.svg"
     alt="wordpress"
     class="w-[20%] lg:w-[15%]"
   />
