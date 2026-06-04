@@ -3,15 +3,5 @@ import tailwindcss from "@tailwindcss/vite";
 /* import { resolve } from "path"; */
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-    viteStaticCopy({
-      targets: [
-        {
-          src: "assets",
-          dest: ".",
-        },
-      ],
-    }),
-  ],
+  plugins: [tailwindcss()],
 });
